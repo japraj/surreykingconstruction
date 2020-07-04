@@ -1,0 +1,32 @@
+:root {
+  --bg-height: 68%;
+}
+
+#galleryWrapper {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  background-repeat: repeat;
+  background-color: var(--gallery-bg);
+  background: linear-gradient(
+    360deg,
+    var(--gallery-bg) 0%,
+    var(--gallery-bg) var(--bg-height),
+    rgba(255, 255, 255, 0) var(--bg-height),
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 770px) {
+  #galleryWrapper {
+    padding-top: 17vh;
+    --bg-height: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  #galleryWrapper {
+    padding-top: 20vh;
+  }
+}

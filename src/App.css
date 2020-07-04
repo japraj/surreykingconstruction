@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+:root {
+  --green: rgb(57, 181, 74);
+  --cream: rgb(245, 245, 219);
+  --pale-green: rgb(152, 251, 152);
+
+  --green: rgb(57, 181, 74);
+  --cream: rgb(255, 255, 248);
+  --pale-green: rgb(42, 192, 42);
+
+  --dark-green: #65b538;
+
+  --display-bg: rgba(0, 0, 0, 0.2);
+  --button-bg: rgba(0, 0, 0, 0.5);
+
+  --display-bg: rgba(255, 255, 255, 0.2);
+  --display-bg: rgba(0, 0, 0, 0.2);
+  --set-item-bg: rgba(0, 0, 0, 0.2);
+  --nav-bg: var(--green);
+  --gallery-bg: rgb(0, 144, 60);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html,
+body {
+  margin: 0;
+  font-family: "Merriweather", serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-image: url("./resources/webb-dark.png");
+  background-repeat: repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
+
+p {
+  font-family: "Merriweather", serif;
+}
+
+.fas,
+.fa,
+.fal,
+.far {
+  /* font-family: "FontAwesome"; */
+  font-style: normal;
+}
+
+#App {
+  text-align: center;
+}
+
+main {
+  float: right;
+  width: 82%;
+}
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }

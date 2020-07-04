@@ -1,0 +1,180 @@
+#horizontalNav {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--nav-bg);
+  height: 15vh;
+  margin: 0;
+  z-index: 1;
+}
+
+#navBars {
+  float: left;
+  margin-left: 10px;
+  font-size: 8vw;
+  padding: 10px;
+}
+
+#verticalNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18%;
+  background-color: var(--nav-bg);
+  height: 100vh;
+  margin: 0;
+  z-index: 1;
+}
+
+#branding {
+  box-sizing: border-box;
+  margin: 3rem auto;
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  filter: invert(100%);
+}
+
+li p {
+  font-size: 1.25rem;
+  margin-top: 13px;
+  transition: transform 0.1s ease-out;
+  font-family: "Lora", serif;
+}
+
+li p:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+ul {
+  width: 100%;
+  height: auto;
+  display: block;
+  justify-content: center;
+}
+
+hr {
+  width: 50%;
+  margin: 2.25rem auto 2.25rem auto;
+  color: white;
+  background-color: white;
+}
+
+#social {
+  margin-bottom: 2rem;
+}
+
+#social > a {
+  color: black;
+  margin: 0.4rem;
+  font-size: 1.35rem;
+}
+
+#social > a:hover {
+  color: blue;
+  font-size: 1.5rem;
+}
+
+#contactInfo > p {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.inline-icon {
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+#navMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-top: 1px solid black;
+  background-color: var(--nav-bg);
+  margin-top: 15vh;
+  width: 100vw;
+  height: 85vh;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1170px) {
+  #verticalNav {
+    display: none;
+  }
+
+  #horizontalNav {
+    display: block;
+  }
+
+  #navBars {
+    margin-left: 1rem;
+    position: absolute;
+    left: 0;
+    top: 25%;
+  }
+
+  #branding {
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 10px;
+    width: auto;
+    height: 90%;
+  }
+
+  main {
+    margin-top: 15vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1170px) {
+  #navBars {
+    margin-left: 3rem;
+  }
+
+  #navMenu,
+  li p,
+  #social i {
+    font-size: 2rem;
+  }
+
+  #navMenu {
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  #navMenu {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #social {
+    margin-bottom: 0.3rem;
+  }
+
+  #contactInfo br {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  #verticalNav {
+    overflow-y: scroll;
+  }
+
+  #verticalNav::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--gallery-bg);
+    margin-right: 3px;
+  }
+
+  #verticalNav::-webkit-scrollbar-thumb {
+    width: 3px;
+    background-color: white;
+  }
+}

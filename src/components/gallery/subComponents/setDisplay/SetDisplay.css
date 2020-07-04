@@ -1,0 +1,65 @@
+.setCard {
+  min-width: 70px;
+  width: 5vw;
+  min-height: 70px;
+  height: 5vw;
+}
+
+.setImage {
+  object-fit: contain;
+}
+
+.selected {
+  transform: scale(1.2, 1.2);
+  background-color: var(--button-bg);
+}
+
+.notSelected {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.5s ease-out;
+  background-color: var(--set-item-bg);
+}
+
+.notSelected:hover {
+  transform: scale(1.2);
+}
+
+#setWrapper {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+#setContainer {
+  position: relative;
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 6vw);
+  row-gap: 2rem;
+  column-gap: 3.75rem;
+  place-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.seeMore {
+  color: var(--button-bg);
+}
+
+.seeMore:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 500px) {
+  #setContainer {
+    grid-template-columns: repeat(4, 6vw);
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #setContainer {
+    grid-template-columns: repeat(3, 6vw);
+  }
+}

@@ -1,0 +1,112 @@
+.navButton {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  height: 14%;
+  width: 6%;
+  position: relative;
+  background-color: var(--button-bg);
+  align-self: center;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transform: scale(1.05);
+  transition: transform 0.25s ease-out;
+}
+
+#leftButton {
+  right: 0.33rem;
+}
+
+#rightButton {
+  left: 0.33rem;
+}
+
+.buttonIcon {
+  padding: 0.1rem;
+  font-size: 1.5rem;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+#backgroundDiv {
+  width: 45vw;
+  height: 70vh;
+  background-color: var(--display-bg);
+  padding: 0.5rem;
+  border-radius: 1%;
+}
+
+#imageDiv {
+  display: flex;
+  justify-content: center;
+  height: 88%;
+  width: auto;
+}
+
+#mainImage {
+  background-color: black;
+  width: 100%;
+  float: left;
+  object-fit: contain;
+}
+
+#space {
+  height: 1%;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#labelContainer {
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+  width: 100%;
+  padding: 0 1rem;
+  max-width: 100vw;
+  height: 11%;
+  overflow-y: scroll;
+  scrollbar-color: var(--display-bg);
+}
+
+#labelContainer::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--display-bg);
+}
+
+#labelContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+p {
+  padding-top: 0.6rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .navButton {
+    display: none;
+  }
+
+  #backgroundDiv {
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .navButton {
+    display: none;
+  }
+
+  #backgroundDiv {
+    width: 75vw;
+  }
+}

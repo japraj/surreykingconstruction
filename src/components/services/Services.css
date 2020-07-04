@@ -1,0 +1,50 @@
+#servicesWrapper {
+  padding-top: 5rem;
+}
+
+#servicesLabel {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 15rem;
+  padding: 1rem;
+  font-size: 3rem;
+  margin: 0 auto 3rem;
+  text-align: center;
+  border: 2px solid var(--green);
+}
+
+#services {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.servicesContainer {
+  margin: 0 1.25rem;
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 700px) {
+  .servicesContainer {
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #services {
+    display: block;
+  }
+
+  #servicesWrapper {
+    padding-top: 19vh;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  #servicesWrapper {
+    padding-top: 20vh;
+  }
+}

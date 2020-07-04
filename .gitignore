@@ -11,6 +11,11 @@
 # production
 /build
 
+# images/logos; index.html & manifest.json are also ignored
+# but they are just boilerplate with some cdn links
+/public
+/resources
+
 # misc
 .DS_Store
 .env.local

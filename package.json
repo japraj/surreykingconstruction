@@ -1,8 +1,11 @@
 {
   "name": "king-construction",
+  "homepage": "http://surreyking.ca",
+  "start_url": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -13,6 +16,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-scroll-into-view": "^1.8.2",
+    "tachyons": "^4.12.0",
     "typescript": "^3.7.5"
   },
   "scripts": {

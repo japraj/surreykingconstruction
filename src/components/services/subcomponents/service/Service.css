@@ -1,0 +1,54 @@
+:root {
+  --service-br: 15px;
+  --service-pa: 20px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  margin: 0 1.5rem 3rem 1.5rem;
+}
+
+.serviceHeader {
+  border-top-right-radius: var(--service-br);
+  border-top-left-radius: var(--service-br);
+  text-align: left;
+  padding: var(--service-pa);
+  background-color: var(--green);
+  width: 100%;
+  min-height: 4rem;
+  user-select: none;
+}
+
+.inactive {
+  border-bottom-right-radius: var(--service-br);
+  border-bottom-left-radius: var(--service-br);
+}
+
+.serviceImage {
+  background-color: black;
+  width: auto;
+  height: 20rem;
+  object-fit: contain;
+}
+
+.serviceContent {
+  min-height: 6rem;
+  padding: var(--service-pa);
+  background-color: var(--green);
+  border-bottom-right-radius: var(--service-br);
+  border-bottom-left-radius: var(--service-br);
+}
+
+@media only screen and (max-width: 1050px) {
+  .service {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1650px) {
+  .service {
+    width: 90%;
+  }
+}
